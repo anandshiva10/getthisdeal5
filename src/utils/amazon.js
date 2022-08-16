@@ -1,8 +1,8 @@
 export const amazon = {
     method: 'GET',
     headers: {
-      'X-RapidAPI-Key': 'e5d0169c32msh099996de1099041p14eb94jsn2ec15ba39ffe',
-      'X-RapidAPI-Host': 'amazon24.p.rapidapi.com'
+      'X-RapidAPI-Key': REACT_APP_RAPID_API_KEY,
+      'X-RapidAPI-Host': REACT_APP_RAPID_API_HOST
     }
   };
 
