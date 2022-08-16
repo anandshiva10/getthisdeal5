@@ -1,0 +1,20 @@
+.float{
+	position:fixed;
+    width: 60px; 
+    height: 60px;
+    bottom: 50px;
+    right: 40px;
+    z-index: 100;
+    /* background-color: wheat; */
+    /* border-radius: 50px; */
+    text-align: center;
+    /* box-shadow: 2px 2px 3px #999; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.float img{
+    width: 60px;
+    height: 60px;   
+}
