@@ -57,7 +57,7 @@ useEffect(() => {
                 <div className='price-info'> 
                 <p>Offer Price: <span>₹{product.data.app_sale_price}</span></p>
                 <p className='mrp'>MRP: ₹{product.data.original_price}</p>
-                <p>discount: ₹{product.data.discount} ({product.data.discount_percentage})%</p>
+                <p>Discount: ₹{product.data.discount} ({product.data.discount_percentage})%</p>
                 </div>
                 <div className='img-link'>
                 <div>                            

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import logo from './logo.jpeg'
+import logo from './logo.png'
 import "./navbar.css"
 const Navbar = () => {
    const [click,setClick] = useState(false)
@@ -11,7 +11,7 @@ const Navbar = () => {
         
            <div className='navbar'>
                 <div className='nav-logo'>
-             <a href="#" className='logo'><img src={logo}/></a>
+                <Link to="/" className='logo'><img src={logo}/></Link>
              </div>
              <div className='hamburger' onClick={handleClick}>
              {click ? <i class="fa-solid fa-xmark"></i> : <i class="fa-solid fa-bars"></i>}
@@ -25,6 +25,16 @@ const Navbar = () => {
                         <li onClick={handleClick}><Link to="/store/myntra">Myntra</Link></li>
                         <li onClick={handleClick}><Link to="/store/ajio">Ajio</Link></li>
                         <li onClick={handleClick}><Link to="/store/other">Other</Link></li>
+                    </ul>
+                    </li>
+                    <li><a >Categories</a>
+                    <ul>
+                        <li onClick={handleClick}><Link to="/category/fashion">Fashion</Link></li>
+                        <li onClick={handleClick}><Link to="/category/electronics">Electronics</Link></li>
+                        <li onClick={handleClick}><Link to="/category/homeapps">Home Appliances</Link></li>
+                        <li onClick={handleClick}><Link to="/category/books">Books</Link></li>
+                        <li onClick={handleClick}><Link to="/category/sports">Sports</Link></li>
+                        <li onClick={handleClick}><Link to="/category/other">Others</Link></li>
                     </ul>
                     </li>
                 <li onClick={handleClick}><Link to="/hotdeals">Hot Deals</Link></li>

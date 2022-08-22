@@ -11,6 +11,7 @@ import ProductInformation from "./components/productContainer/ProductInformation
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import Floater from "./components/floater/Floater";
+import Categories from "./components/categories/Categories";
 
 function App() {
   const [data,setData] = useState([])
@@ -24,7 +25,10 @@ function App() {
               id: doc.id,
           }))
           // console.log(products)
-          setData(products)
+          const sproduct=products.sort(function(a,b){
+            return b.data.created_timeStamp-a.data.created_timeStamp
+          })
+          setData(sproduct)
           
           console.log(data)
       }).catch(error =>console.log(error));
@@ -54,6 +58,7 @@ useEffect(()=>{
       <Routes>
       <Route exact path ="/" element={<Homepage data={data} dataFound={dataFound}/>} />
       <Route path="/store/:name" element={<Store data={data} dataFound={dataFound}/>}/>
+      <Route path="/category/:name" element={<Categories data={data} dataFound={dataFound}/>}/>
       <Route path="/hotdeals" element={<HotDeal data={data} dataFound={dataFound}/>}/>
       <Route path="/p/:id" element={<ProductInformation data={data} dataFound={dataFound}/>}/>
       </Routes>

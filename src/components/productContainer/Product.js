@@ -55,7 +55,7 @@ const Product = ({data,id}) => {
                     <hr className="line"/>
                     <div className='product-price'>
                         <div className='product-actualPrice'>
-                            <p>MRP: <span className='price'>₹{data.original_price}</span> ₹{data.app_sale_price}</p>                       
+                            <p><span className="product-discount">MRP:</span> <span className='price'>₹{data.original_price}</span> ₹{data.app_sale_price}</p>                       
                            
                         </div>
                         <div className='product-discount'>
@@ -63,7 +63,7 @@ const Product = ({data,id}) => {
                         </div>
                     </div>
                     <div className="link-img">
-                        <a href={data.product_url} className="btn41-43 btn-41">
+                        <a href={data.product_url} className="button-link">
                         Shop Now
                         </a>
                         <img src={process.env.PUBLIC_URL +`/icons/${data.site}.png`} />

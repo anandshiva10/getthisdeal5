@@ -9,6 +9,7 @@
   box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
   flex-direction: column;
   row-gap: 1rem;
+  margin-top: 5rem;
 }
 
 
@@ -69,7 +70,7 @@
 }
 
 .price-info p span{
-    font-size: 1rem;
+  font-size: 1.35rem;
 }
 
 .price-info .mrp{
@@ -91,19 +92,21 @@
 
 
 .btn-link {
-  /* width: 107px; */
+  display: inline-block;
   background-color: white;
-  /* height: 63px; */
-  /* padding: 0; */
-  border: 1px solid;
-  padding: 8px;
-  color: black;
+  box-sizing: border-box;
+  border: .12rem solid;
+  /* border-radius: .3rem; */
+  text-decoration: none;
+  padding: .4rem 1.3rem;
+  width: 140px;
+  transition: all 0.5s ease;
 }
 
 .btn-link:hover{
   color: white;
   background-color: black;
-  border: 1px solid white;
+  border: .12rem solid white;
 }
 
 .row-2{

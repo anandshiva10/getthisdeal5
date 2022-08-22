@@ -18,7 +18,7 @@
 }
 
 .times{
-    margin: 3px auto;
+    margin: 10px auto 2px auto;
     display: flex;
     font-size: 12px;
     align-items: center;
@@ -45,11 +45,11 @@
 
 .product-title{
     margin: 0;
-    font-size: 0.8rem;
-    line-height: 0.9rem;
+    font-size: 0.7rem;
+    line-height: 0.8rem;
     word-break: break-word;
     letter-spacing: 0.5px;
-    max-height: 50px;
+    max-height: 40px;
     -webkit-line-clamp: 3;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -57,7 +57,7 @@
     -webkit-box-orient: vertical;
     white-space: normal;
     text-align: initial;
-    min-height: 44px;
+    min-height: 35px;
     padding: 0 11px;
 }
 
@@ -84,16 +84,16 @@
     display: flex;
     flex-direction: row;
     align-items: start;
-    font-size: 1em;
+    font-size: 0.9rem;
 }
 
 .price{
     text-decoration: line-through;
-    font-size: 0.8em;
+    font-size: 0.7em;
 }
 
 .product-discount{
-    font-size: 0.75em;
+    font-size: 0.7em;
 }
 
 .link-img{
@@ -108,54 +108,24 @@
     border-radius: 5px;
 }
 
-.btn41-43 {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-size: 12px;
-    background: transparent;
-    outline: none !important;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-  }
-  
-  .btn-41 {
-    border: 1px solid rgb(0, 0, 0);
-    z-index: 1;
-    color: black;
-    width: 80px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.button-link {
+    display: inline-block;
+    background-color: white;
+    box-sizing: border-box;
+    border: 0.12rem solid;
+    /* border-radius: 0.3rem; */
     text-decoration: none;
+    padding: 0.4rem;
+    width: 90px;
+    transition: all 0.5s ease;
+    font-size: 0.8rem;
+    text-align: center;
   }
   
-  .btn-41:after {
-    position: absolute;
-    content: "";
-    width: 0;
-    height: 100%;
-    top: 0;
-    left: 0;
-    direction: rtl;
-    z-index: -1;
-    background: rgb(0, 0, 0);
-    transition: all 0.3s ease;
-  }
-  
-  .btn-41:hover {
-    color: rgb(255, 255, 255);
-  }
-  
-  .btn-41:hover:after {
-    left: auto;
-    right: 0;
-    width: 100%;
-  }
-  
-  .btn-41:active {
-    top: 2px;
+  .button-link:hover{
+    color: white;
+    background-color: black;
+    border: .12rem solid white;
   }
 
   @media screen and (max-width:1166px){

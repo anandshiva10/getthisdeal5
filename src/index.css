@@ -23,6 +23,7 @@ ul{
   margin: 2rem;
   font-family: montserrat;
   font-size: 1rem;
+  padding-top: 3rem;
 }
 
 .title-line{
@@ -31,8 +32,8 @@ ul{
 }
 
 .page{
-  min-height: 75.7vh;
-  margin-top: 110px;
+  min-height: 93vh;
+  /* padding-top: 5rem; */
 }
 .spinner{
   display: flex;
@@ -41,7 +42,9 @@ ul{
   justify-content: center;
 }
 
-
+.height{
+  margin-top: 5rem;
+}
 @media screen and (max-width:660px){
   .title{   
       margin: 1.5rem 1.5rem 0 1.5rem;

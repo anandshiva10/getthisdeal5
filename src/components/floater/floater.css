@@ -1,22 +1,70 @@
-.float{
-	position:fixed;
-    width: 60px; 
-    height: 60px;
+
+.float {
+    position: fixed;
+    /* width: 60px; */
+    /* height: 60px; */
     bottom: 50px;
     right: 40px;
     z-index: 100;
     /* background-color: wheat; */
     /* border-radius: 50px; */
+    /* width: 10rem; */
+    border-radius: 10px;
+}
+.float-data {
     text-align: center;
     /* box-shadow: 2px 2px 3px #999; */
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+    background-color: #87CEEB;
+    padding: 0.7rem;
+    width: 13rem;
+    border-radius: 15px;
 }
 
 .float img{
-    width: 60px;
-    height: 60px;
-    border: 2px solid deepskyblue;
+    width: 30px;
+    height: 30px;
+    /* border: 2px solid deepskyblue; */
     border-radius: 50%;   
 }
+
+.close {
+    position: absolute;
+    right: 10px
+    /* color: white; */
+}
+
+
+
+.none{
+    display: none;
+}
+
+@media screen and (max-width:500px){
+    .fa-solid, .fas {
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
+        font-size: 0.8rem;
+    }
+
+    .float-data {
+        text-align: center;
+        /* box-shadow: 2px 2px 3px #999; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #87CEEB;
+        padding: 0.5rem;
+        width: 11rem;
+        border-radius: 15px;
+        font-size: 12px;
+    }
+
+    .float img {
+        width: 30px;
+        height: 30px;
+    }
+    
+  }

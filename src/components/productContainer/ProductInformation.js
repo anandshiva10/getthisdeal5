@@ -1,19 +1,19 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import { ScaleLoader } from 'react-spinners'
-import "./productContainer.css"
+// import "./productContainer.css"
 import ProductData from './ProductData'
 
 const ProductInformation = ({data,dataFound}) => {
     let id=useParams().id
     const [product,setProduct] = useState({data:{ product_main_image_url:"https://www.chanchao.com.tw/images/default.jpg"}})
-    const [fdata, setFdata]= useState([])
 
  useEffect(() => {
-   const d=data.find(o => o.id === id)
+  var d={}
+  d=data.find(o => o.id === id)
    console.log(d)
    setProduct(d)
-   console.log(product)
+  //  console.log("product length =>"+Object.keys(d[0]).length)
  }, [data])
  
  useEffect(() => {
@@ -21,24 +21,15 @@ const ProductInformation = ({data,dataFound}) => {
 }, [product])
 
 
-useEffect(() => {
-    const filtered= data.filter((item)=>
-      item.data.hot_deal
-    );
-    setFdata(filtered);
-    console.log(fdata)
-  }, [data])
-  
-  useEffect(() => {
-    console.log("Changed products: ", fdata)
- }, [fdata])
-
     return (
         <div className='page'>
             {
-                dataFound ?   (<>
+                dataFound ?  product==null ?  (<div className='title'>
+                <p>Oops.. Product not found</p>
+                <p>Please enter the correct link</p>
+                </div>): (<>
                 <ProductData product={product}/>
-                </>) : (<div className='spinner'><ScaleLoader/><p>Please wait while we fetch you this product.</p></div>) 
+                </>)  : (<div className='spinner height' ><ScaleLoader/><p>Please wait while we fetch you this product.</p></div>) 
             }
     </div>
   )
