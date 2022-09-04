@@ -20,15 +20,15 @@ ul{
 
 .title{
   text-align: center;
-  margin: 2rem;
+  /* margin: 2rem; */
   font-family: montserrat;
   font-size: 1rem;
-  padding-top: 3rem;
+  padding-top: 6rem;
 }
 
 .title-line{
+  margin: 1em auto 2em auto;
   width: 80%;
-  margin: 1.5em auto;
 }
 
 .page{

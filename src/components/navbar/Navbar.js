@@ -31,9 +31,13 @@ const Navbar = () => {
                     <ul>
                         <li onClick={handleClick}><Link to="/category/fashion">Fashion</Link></li>
                         <li onClick={handleClick}><Link to="/category/electronics">Electronics</Link></li>
-                        <li onClick={handleClick}><Link to="/category/homeapps">Home Appliances</Link></li>
+                        <li onClick={handleClick}><Link to="/category/home">Home Appliances</Link></li>
                         <li onClick={handleClick}><Link to="/category/books">Books</Link></li>
                         <li onClick={handleClick}><Link to="/category/sports">Sports</Link></li>
+                        <li onClick={handleClick}><Link to="/category/mobiles">Mobiles</Link></li>
+                        <li onClick={handleClick}><Link to="/category/kitchen">Kitchen</Link></li>
+                        <li onClick={handleClick}><Link to="/category/kids">Kids</Link></li>
+                        <li onClick={handleClick}><Link to="/category/grocery">Grocery</Link></li>
                         <li onClick={handleClick}><Link to="/category/other">Others</Link></li>
                     </ul>
                     </li>

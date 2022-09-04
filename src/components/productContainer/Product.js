@@ -27,11 +27,18 @@ const Product = ({data,id}) => {
                 time=mm +" minutes ago"
             }
         }
-        else{
+        else if(hh<=24){
             if(hh===1)
             time=hh + " hour ago"
             else
             time=hh + " hours ago"
+        }
+        else{
+            var days=Math.ceil(hh/24);
+            if(days<=1)
+            time=days+ " day ago"
+            else
+            time=days+ " days ago"
         }
         return(time);
     }
